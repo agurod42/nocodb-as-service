@@ -1,0 +1,14 @@
+[Unit]
+Description=NocoDB
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ec2-user
+ExecStart=/home/ec2-user/nocodb
+Restart=always
+User=root
+Group=root
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
